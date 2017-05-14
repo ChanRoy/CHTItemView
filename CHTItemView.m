@@ -75,7 +75,7 @@ static NSInteger const kItemHeight                  = 92;
             
             UIImageView *icon = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(bgView.frame), CGRectGetHeight(bgView.frame) - labelH)];
             icon.contentMode = UIViewContentModeCenter;
-            icon.image = _icons[number];
+            icon.image = [UIImage imageNamed:_icons[number]];
             [bgView addSubview:icon];
             
             UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(icon.frame), CGRectGetWidth(bgView.frame), labelH)];
